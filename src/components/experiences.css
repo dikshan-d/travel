@@ -1,0 +1,98 @@
+/* Section styling */
+.experiences-section {
+  padding: 80px 40px;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+.experiences-content h2::after {
+  content: "";
+  display: block;
+  margin: 15px auto 0;
+  width: 200px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+.experiences-content h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+/* Image grid */
+.experience-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.experience-img {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.experience-img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Popup box */
+.popup-box {
+  background: rgba(20,20,20,0.95);
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Image in popup */
+.popup-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Close btn */
+.close-btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: 2px solid white;
+  background: transparent;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

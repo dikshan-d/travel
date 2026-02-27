@@ -1,0 +1,52 @@
+/* src/components/about.css */
+.about-section {
+  background-color: black; /* dark theme */
+  color: white;
+  padding: 80px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.about-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-content h2::after {
+  content: "";
+  display: block;
+  margin: 15px auto 0;
+  width: 400px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.start-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border-radius: 25px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background: white;
+  color: black;
+}
