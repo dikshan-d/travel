@@ -15,7 +15,7 @@ export default function Home() {
       {/* Navbar */}
       <nav className="navbar">
         <div className="logo">
-          <img src="/logo.jpg" alt="" className="logo-img" />
+          <img onClick={() => setActiveSection("home")}src="/logo.jpg" alt="" className="logo-img" />
         </div>
         <ul className="nav-links">
           <li onClick={() => setActiveSection("home")}>Home</li>
